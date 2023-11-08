@@ -1,0 +1,152 @@
+#produtos
+{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#produtos .produto
+{
+    background-color: #ffffffa6;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 7px;
+    transition: all .6s;
+}
+#produtos .produto div
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#produtos .produto img
+{
+    width: 200px;
+    height: 120px;
+    
+}
+#produtos .produto p
+{
+    width: 94%;
+    margin: auto;
+    text-align: justify;
+    color: rgb(37, 37, 37);
+    margin-bottom: 10px;
+}
+#produtos .produto:hover
+{
+    background-color: rgb(247, 247, 247);
+    margin-top: 10px;
+}
+h3
+{
+    font-family: title;
+    color: rgb(255, 63, 63);
+    font-size: 20pt;
+}
+/*Segunda secção*/
+#question-section
+{
+    width: 100%;
+    background-color: #ffffff;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    box-shadow: 2px 2px 3px rgb(233, 233, 233);
+}
+.question
+{
+    width: 78%;
+    height: 230px;
+    border: 1px solid rgb(221, 221, 221);
+    margin: auto;
+    padding: 7px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    transition: all .6s;
+}
+.question-tenis
+{
+    background-image: url('../images/produtos/question-tenis.png');
+    background-position: center;
+    background-size: 50% 80%;
+    background-repeat: no-repeat;
+}
+#nos
+{ 
+    background-color: #49494980;
+    border-radius: 8px;
+    background-image: url('../images/images-background/titulo.png');
+}
+.question p, .question h3
+{
+    padding: 10px;
+    width: 90%;
+    text-align: justify;
+}
+.question h3
+{
+    margin: 7px 0px 7px 0px;
+}
+.question:hover
+{
+    border: 1px solid rgb(206, 206, 206);
+    box-shadow: 2px 2px 3px rgb(197, 197, 197);
+}
+.question button
+{
+    display: block;
+    margin-left: 7px;
+    background-color: rgb(255, 63, 63);
+    color: #ffffff;
+    width: 150px;
+    height: 27pt;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .6s;
+}
+#question button:hover
+{
+    background-color: #ffffff;
+    color: rgb(255, 63, 63);
+    border: 1px solid rgb(255, 63, 63);
+}
+p
+{
+    font-family: conteudo;
+}
+@media screen and (max-width:600px)
+{
+    #produtos
+    {
+        padding: 50px 0px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #question-section
+    {
+        height: fit-content;
+    }
+    .question
+    {
+        width: 100%;
+        height:400px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        overflow: hidden;
+    }
+    #nos
+    {
+        height: 100px;
+        background-size: cover;
+        background-color: rgb(78, 77, 77);
+    }
+    .question-tenis
+    {
+        height: 100px;
+        background-size: 50% 100%;
+    }
+}

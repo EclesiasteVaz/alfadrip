@@ -1,0 +1,51 @@
+nav
+{
+    width: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #ffffff83;
+    position: fixed;
+    top: 30%;
+    right: 3px;
+}
+nav:hover
+{
+    width: fit-content;
+}
+nav ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li
+{
+    margin: 10px 0px;
+    padding: 7px;
+}
+li a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+
+}
+a img
+{
+    width: 30px;
+    height: 30px;
+    margin-left: -4px;
+}
+a span
+{
+    margin-left: 10px;
+}
+li:hover
+{
+    background-color: white;
+}
+li:hover a span
+{
+    color: rgb(49, 49, 49);
+}
